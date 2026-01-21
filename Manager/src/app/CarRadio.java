@@ -8,7 +8,6 @@ public class CarRadio implements IRadio {
     private StationType currentType;
     private StationValue currentStation;
 
-    // Botones 1–12
     private List<Map<Integer, StationValue>> savedStations;
 
     public CarRadio() {
