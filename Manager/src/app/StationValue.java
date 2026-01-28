@@ -16,4 +16,9 @@ public class StationValue {
     public StationType getType() {
         return type;
     }
+
+    @Override
+    public String toString() {
+        return type + " " + frequency;
+    }
 }

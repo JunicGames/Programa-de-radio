@@ -7,14 +7,12 @@ public class CarRadio implements IRadio {
     private boolean isOn;
     private StationType currentType;
     private StationValue currentStation;
-
     private List<Map<Integer, StationValue>> savedStations;
 
     public CarRadio() {
         isOn = false;
         currentType = StationType.FM;
         currentStation = null;
-
         savedStations = new ArrayList<>();
         savedStations.add(new HashMap<>());
     }
@@ -22,7 +20,6 @@ public class CarRadio implements IRadio {
     @Override
     public void turnOn() {
         isOn = true;
-
         if (currentStation == null) {
             currentType = StationType.FM;
             currentStation = new StationValue(102.5, StationType.FM);
